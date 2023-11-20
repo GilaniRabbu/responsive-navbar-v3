@@ -3,154 +3,155 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #24252A;
-  /* justify-content: flex-end; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    /* justify-content: flex-end; */
 }
 
 .logo {
-  color: #EDF0F1;
-  cursor: pointer;
-  font-size: 1.75rem;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  /* margin-right: auto; */
+    color: #EDF0F1;
+    cursor: pointer;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* margin-right: auto; */
 }
 
 .logo span {
-  color: #90EE90;
-  font-weight: 300;
+    color: #90EE90;
+    font-weight: 300;
 }
 
 .nav__links a,
 .cta,
 .overlay__content a {
-  color: #EDF0F1;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
+    color: #EDF0F1;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 .nav__links {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 }
 
 .nav__links li {
-  padding: 0px 20px;
+    padding: 0px 20px;
 }
 
 .nav__links li a {
-  transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
-  color: #0088A9;
+    color: #0088A9;
 }
 
 .cta {
-  padding: 9px 25px;
-  background-color: rgba(0, 135, 170, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
+    padding: 9px 25px;
+    background-color: rgba(0, 135, 170, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
 }
 
 .cta:hover {
-  background-color: rgba(0, 135, 170, 0.8);
+    background-color: rgba(0, 135, 170, 0.8);
 }
 
 /* Mobile Nav */
 
 .menu {
-  display: none;
+    display: none;
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: #24252A;
-  overflow-x: hidden;
-  transition: width 0.5s ease 0s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252A;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
 }
 
 .overlay--active {
-  width: 100%;
+    width: 100%;
 }
 
 .overlay__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay a {
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: color 0.3s ease 0s;
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088A9;
+    color: #0088A9;
 }
 
 .overlay .close {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #EDF0F1;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #EDF0F1;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
+    .overlay a {
+        font-size: 20px;
+    }
 
-  .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 
 @media (max-width: 800px) {
-  .nav__links,
-  .cta {
-    display: none;
-  }
 
-  .menu {
-    display: initial;
-  }
+    .nav__links,
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
 }
 
 /* ===== */
@@ -158,17 +159,17 @@ header {
 .sec-1,
 .sec-2,
 .sec-3 {
-  min-height: 100dvh;
+    min-height: 100dvh;
 }
 
 .sec-1 {
-  background-color: #6495ED;
+    background-color: #6495ED;
 }
 
 .sec-2 {
-  background-color: #3CB371;
+    background-color: #3CB371;
 }
 
 .sec-3 {
-  background-color: #1E90FF;
+    background-color: #1E90FF;
 }
